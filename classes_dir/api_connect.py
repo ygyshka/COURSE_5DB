@@ -47,29 +47,3 @@ def get_vacancies(data: list[dict]) -> list[DBManager]:
                             item['salary'])
         new_list.append(vacancy)
     return new_list
-
-
-
-# emp1 = HhAPI()
-
-# new_view = get_vacancies(emp1.get_request(407))
-# # for i in new_view:
-# #     # print(f'{i.salary} {i.currency}')
-# #     print(i)
-# emp = json.dumps(emp1.get_request(36227), indent=4, ensure_ascii=False)
-# print(emp)
-
-
-
-# list_vac_of_emp = []
-# result = 0
-# for _id in employers_id.keys():
-#     new_view = get_vacancies(emp1.get_request(_id))
-#     list_vac_of_emp.append({_id: new_view})
-#     for i in new_view:
-#         # print(f'{i.salary} {i.currency}\n'
-#         #       f'{i.vacancy_name}\n')
-#         result += 1
-# print(result)
-
-
